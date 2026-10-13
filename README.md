@@ -7,6 +7,7 @@ for Google Play. Source of truth: `legal_site/` in the game repo
 | Page | URL |
 |---|---|
 | Teaser | https://onvexalabs-dev.github.io/anamors-block-puzzle-page/ |
+| Interactive tutorial (playable in the browser) | https://onvexalabs-dev.github.io/anamors-block-puzzle-page/how-to-play.html |
 | Privacy policy (Play Console "Privacy policy") | https://onvexalabs-dev.github.io/anamors-block-puzzle-page/privacy.html |
 | Terms of use | https://onvexalabs-dev.github.io/anamors-block-puzzle-page/terms.html |
 | Imprint / Impressum | https://onvexalabs-dev.github.io/anamors-block-puzzle-page/imprint.html |
