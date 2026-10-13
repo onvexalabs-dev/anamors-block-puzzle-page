@@ -1,0 +1,3 @@
+# app-ads.txt for Anamor's Block Puzzle (Manfred Uschan / Onvexa Labs)
+# NOTE: AdMob only crawls the domain root (https://onvexalabs-dev.github.io/app-ads.txt) - see README.md.
+google.com, pub-9404893474354911, DIRECT, f08c47fec0942fa0
