@@ -3,7 +3,7 @@
 (function () {
   "use strict";
   var N = 8;
-  var COLORS = ["#FF4D6D", "#FF9F1C", "#FFD60A", "#3DDC84", "#22D3EE", "#4D7CFE", "#B15CFF"];
+  var COLORS = ["#F2545B", "#F79A3E", "#F6C945", "#5CBF6E", "#3FB8D9", "#4F7FE0", "#A46AE0"];
   var SHAPES = {
     mono: ["X"], i2_h: ["XX"], i2_v: ["X", "X"], i3_h: ["XXX"], i3_v: ["X", "X", "X"],
     l3_a: ["X.", "XX"], l3_b: [".X", "XX"], l3_c: ["XX", "X."], l3_d: ["XX", ".X"],
