@@ -148,3 +148,46 @@ html.lang-en .tut-msg span[data-lang="en"], html.lang-de .tut-msg span[data-lang
 .drag-ghost.back { transition: transform .18s ease-in; }
 .tut-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
 .tut-msg .btn { margin-top: 10px; }
+
+/* --- landing page (v1.3) --- */
+.hero2 { margin: 6px 0 22px; border-radius: 28px; overflow: hidden; padding: 70px 18px 40px;
+  background: url("hero.jpg") center/cover; box-shadow: 0 14px 34px rgba(90, 50, 20, .28); text-align: center; }
+.hero-card { display: inline-block; max-width: 560px; background: rgba(255, 247, 234, .93); border: 2px solid var(--trace);
+  border-radius: 26px; padding: 22px 26px 18px; box-shadow: 0 10px 26px rgba(90, 50, 20, .22); }
+.hero-icon { width: 112px; height: 112px; border-radius: 26px; margin-top: -78px; border: 5px solid #fff7ea;
+  box-shadow: 0 10px 24px rgba(90, 50, 20, .35); }
+.hero2 h1 { font-size: 40px; margin: 10px 0 2px; color: var(--accent); }
+.tagline { font-size: 19px; margin: 0 0 14px; color: var(--text); }
+.cta { display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0; }
+.cta .badge { margin: 0; }
+.shots { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 4px 16px; }
+.shots figure { margin: 0; flex: 0 0 min(42vw, 200px); scroll-snap-align: start; }
+.shots img { width: 100%; height: auto; border-radius: 18px; border: 4px solid #fff7ea; box-shadow: 0 10px 22px rgba(90, 50, 20, .28); display: block; }
+.intro { font-size: 18px; background: rgba(255, 247, 234, .8); border-radius: 18px; padding: 14px 18px; }
+.seasons { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 14px 0 6px; }
+.season { margin: 0; position: relative; border-radius: 20px; overflow: hidden; border: 4px solid #fff7ea; box-shadow: 0 8px 20px rgba(90, 50, 20, .25); }
+.season img { width: 100%; display: block; aspect-ratio: 1 / 1.15; object-fit: cover; }
+.season figcaption { position: absolute; left: 6px; right: 6px; bottom: 6px; background: rgba(255, 247, 234, .92); border-radius: 12px;
+  padding: 4px 6px; text-align: center; line-height: 1.25; }
+.season b { display: block; font-size: 14px; } .season span { font-size: 12px; color: var(--dim); }
+.feats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.feat { background: var(--panel); border: 2px solid var(--trace); border-radius: 20px; padding: 14px 16px; box-shadow: 0 6px 16px rgba(90, 50, 20, .14); }
+.feat h3 { margin: 6px 0 4px; } .feat p { margin: 0; font-size: 15px; color: var(--dim); }
+.ico { display: inline-block; width: 46px; height: 46px; border-radius: 14px; background: var(--accent); position: relative; }
+.ico::after { content: ""; position: absolute; inset: 9px; background: #fff; -webkit-mask: var(--ic) center/contain no-repeat; mask: var(--ic) center/contain no-repeat; }
+.feat:nth-child(2) .ico { background: #f2ae2e; } .feat:nth-child(3) .ico { background: #4c9fd6; }
+.feat:nth-child(4) .ico { background: #ef5f73; } .feat:nth-child(5) .ico { background: #9c7bd6; } .feat:nth-child(6) .ico { background: #5db37e; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.chip { background: #fff; border: 1px solid var(--trace); border-radius: 999px; padding: 3px 12px; font-size: 14px; }
+.dedication { margin: 30px 0 10px; border-radius: 26px; padding: 40px 20px; text-align: center; color: #fff;
+  background: linear-gradient(rgba(40, 20, 60, .35), rgba(40, 20, 60, .35)), url("season_together.jpg") center/cover; }
+.dedication h2 { color: #fff; margin-top: 0; } .dedication p { font-size: 20px; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,.4); }
+.support { text-align: center; margin-top: 18px; }
+@media (max-width: 720px) {
+  .seasons { grid-template-columns: repeat(2, 1fr); }
+  .seasons .season:last-child { grid-column: span 2; }
+  .seasons .season:last-child img { aspect-ratio: 2 / 1.1; }
+  .feats { grid-template-columns: 1fr; }
+  .hero2 { padding-top: 64px; } .hero2 h1 { font-size: 30px; }
+}
+@media (min-width: 721px) { .shots { overflow: visible; } .shots figure { flex: 1 1 0; } }
